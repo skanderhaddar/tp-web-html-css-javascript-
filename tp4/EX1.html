@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> function changecouleur() {
+        document.getElementById('111').style.color = "red";
+      }
+      function nightcolor(color){
+        document.body.style.background= color
+      }
+      function modifierImg(image){
+        document.getElementById(image).src="téléchargement.png"
+
+      }
+
+      </script>
+</head>
+<body>
+    <h3 id="111" onclick=changecouleur()> Paragraphe qui change de couleur</h3><br>
+    <button onclick=nightcolor("black")>Night</button> 
+    <button onclick=nightcolor("white")>day</button><br> <br>
+    <img src="Unofficial_JavaScript_logo_2.svg.png" id ="222" height="100px" width="100px" onmouseover="setTimeout('modifierImg(222)' , 3000)">
+  
+    
+</body>
+</html>

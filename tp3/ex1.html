@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de contacts</title>
+    <link rel="stylesheet" href="css ex1.css">
+
+</head>
+<body>
+    <header> <h1>Gestionnaire de contacts</h1></header>
+    <nav> 
+        <ul>
+        <li style="color: blue ;"> Accueil</li>
+        <li> / </li>
+        <li> Clients</li>
+       </ul>
+    </nav>
+    <section>
+        <article>
+            <h4>ajout/ modification d'un contact</h4>
+            <details>
+                <summary>click to show the form</summary>
+                <fieldset>
+                    <legend>Nouveau contact</legend>
+
+                <form>
+                    <div class="row">
+                        <label for="fname">first name:</label>
+                        <input type="text" id="fname" name="fname" required maxlength="32" > <br>
+                    </div>
+                    <div class = "row">
+                        <label for="lname">last name:</label>
+                        <input type="text" required id="lname" name="lname" maxlength="32" > <br>
+                    </div>    
+                    <div class = "row">
+                         <label >telephone:</label>
+                         <input type="tel" id="tel"  name="tel" maxlength="128"placeholder="123-45-678" required><br>
+                    </div>
+                    <div class = "row">
+                         <label >mail :</label>
+                         <input type="text" id="mail" name="mail"><br>
+                    </div>
+                    <div class = "row">
+                         <label>date of birth:</label>
+                         <input type="date" id="date" name="date"><br>
+                   </div>
+                   <div class = "row">
+                         <label>number of childs:</label>
+                         <input type ="range" min ="0" max="5">
+                   </div>
+                  </form>
+                </fieldset>
+                <div class="row" id="buttons">
+                    <button type="submit">OK</button>
+              </div>
+            </details>
+            <h2>listes des contacts</h2>
+            <table >
+                <thead>
+                <tr>
+                    <td> Prénom</td>
+                    <td> Nom</td>
+                    <td> Téléphone</td>
+                    <td> Email</td>
+                    <td> Date de naissance</td>
+                    <td> Nombre d'enfants</td>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                    <td> Jean</td>
+                    <td> Marais</td>
+                    <td> 0614587</td>
+                    <td> jeanmarais@acteur.fr</td>
+                    <td> 17/08/1945</td>
+                    <td> 2</td>
+                </tr>
+                <tr>
+                    <td> ahmed</td>
+                    <td> ben salah</td>
+                    <td> 97185485</td>
+                    <td> haddarskander@acteur.fr</td>
+                    <td> 17/08/2007</td>
+                    <td> 4</td>
+                </tr>
+                <tr>
+                    <td> med</td>
+                    <td> chabchoub</td>
+                    <td> 22174185</td>
+                    <td> chéby@acteur.fr</td>
+                    <td> 17/08/1999</td>
+                    <td> 5</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="new">
+                <button type="button" >Nouveau client</button>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        Gestionnaire de contact - 2022
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+ul {
+    list-style-type:  none;
+  }
+ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 1px 0px;
+}
+a:haver{
+    color: orange;
+    border-bottom: 2px solid gold;
+}

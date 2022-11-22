@@ -1,0 +1,43 @@
+
+input:valid {
+    background-color: green;
+}
+input:invalid{
+    background-color: pink;
+}
+.row{
+    margin: 10px 70px 25px 0px;
+}
+input{
+    float: right;
+    border-radius: 8px;
+    width: 60%;
+    height: 25px;
+}
+#buttons {
+    float: right;
+}
+.new{
+    float:right;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #c4c4c4;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+  }
+
+  ul{padding: 10px 0px 10px 10px;}
+li{
+    display: inline-block;
+}
+tbody tr:nth-child(odd) {
+    background-color: #c4c4c4;
+  }
+thead{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
